@@ -34,8 +34,8 @@ public class StudentServiceImpl implements StudentService{
         if(studentRepository.existsById(id)){
             student.setId(id);
             return studentRepository.save(student);
-        }   else {
-                return null;
+        } else {
+            throw new RuntimeException("Error: Estudiante no encontrado al intentar actualizar.");
         }
     }
 
