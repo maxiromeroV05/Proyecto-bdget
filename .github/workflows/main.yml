@@ -21,6 +21,9 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: Dar permisos de ejecucion a mvnw
+        run: chmod +x mvnw
+
       - name: Ejecutar pruebas
         run: ./mvnw test
 
@@ -35,6 +38,9 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+
+      - name: Dar permisos de ejecucion a mvnw
+        run: chmod +x mvnw
 
       - name: Compilar y empaquetar (sin ejecutar tests, ya corrieron en develop)
         run: ./mvnw clean package -DskipTests
