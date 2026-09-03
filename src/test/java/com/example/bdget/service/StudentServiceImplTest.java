@@ -1,6 +1,7 @@
 package com.example.bdget.service;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
 import java.util.Arrays;
@@ -64,12 +65,12 @@ class StudentServiceImplTest {
         verify(repository).save(student);
     }
 
-    @Test
-    void testUpdateStudentNotExists() {
-        when(repository.existsById(1L)).thenReturn(false);
-        assertNull(service.updateStudent(1L, student));
-        verify(repository, never()).save(any());
-    }
+   @Test
+void testUpdateStudentNotExists() {
+    when(repository.existsById(1L)).thenReturn(false);
+    assertThrows(RuntimeException.class, () -> service.updateStudent(1L, student));
+    verify(repository, never()).save(any());
+}
 
     @Test
     void testDeleteStudent() {
