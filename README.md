@@ -112,6 +112,16 @@ El proyecto incluye un `Dockerfile` funcional. Para construir y correr la imagen
 docker build -t bdget .
 docker run -p 8080:8080 bdget
 ```
+Reflexiones individuales : 
+-Maximiliano : Elegimos GitFlow porque nos hacía más sentido para un equipo chico como el nuestro (3 personas) y sin despliegue continuo. Trunk-based es más útil cuando hay muchas personas subiendo cambios todo el día y hay que evitar conflictos de ramas largas, pero ese no era nuestro caso.
+
+Con develop podíamos probar cosas sin arriesgar main, y usando feature/* y hotfix/* separamos bien el trabajo normal de los arreglos urgentes. Además, la pauta del curso pedía justo ese manejo de ramas, así que GitFlow calzaba mejor con lo que teníamos que demostrar.
+
+Eso sí, para un proyecto tan pequeño, GitFlow igual se sintió un poco más pesado de lo necesario. Trunk-based habría sido más simple, pero no nos dejaba mostrar lo que pedía el ramo.
+
+-Benjamin:
+
+_Bastian: 
 
 ---
 
