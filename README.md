@@ -121,7 +121,7 @@ Eso sí, para un proyecto tan pequeño, GitFlow igual se sintió un poco más pe
 
 -Benjamin:
 
-_Bastian: 
+_Bastian: Mi responsabilidad principal fue resolver errores en la rama hotfix, solucionando un NullPointerException. Esto me demostró la importancia de aislar las correcciones urgentes para no interrumpir las nuevas funcionalidades que desarrollan mis compañeros. Además, al realizar la revisión cruzada de código y redactar las reglas de integración del equipo, comprobé que establecer convenciones claras desde el principio es fundamental para evitar conflictos y trabajar de forma profesional en un entorno colaborativo y sin problemas.
 
 ---
 
