@@ -119,7 +119,13 @@ Con develop podíamos probar cosas sin arriesgar main, y usando feature/* y hotf
 
 Eso sí, para un proyecto tan pequeño, GitFlow igual se sintió un poco más pesado de lo necesario. Trunk-based habría sido más simple, pero no nos dejaba mostrar lo que pedía el ramo.
 
--Benjamin:
+-Benjamin: 
+Bueno, yo me encargué de realizar la rama feature/busqueda-por-nombre, además de los endpoints correspondientes. Uno de los desafíos que tuve fue en Visual Studio Code, principalmente por escribir unas líneas de código fuera de lugar, lo que me hizo perder tiempo resolviéndolo al fijarme bien en lo que estaba escribiendo.
+
+Sin embargo, mi mayor reto fue en GitHub. Estaba acostumbrado a trabajar todo en local, y el tener que esperar a que revisaran mi parte, me dieran el visto bueno, y además esperar las partes de mis compañeros, me costó al principio, pero lo pude realizar sin muchas complicaciones.
+
+Me sirvió mucho aprender a manejarme mejor en GitHub. Considero que esta experiencia me preparó mucho mejor para los proyectos que se vienen.
+
 
 _Bastian: Mi responsabilidad principal fue resolver errores en la rama hotfix, solucionando un NullPointerException. Esto me demostró la importancia de aislar las correcciones urgentes para no interrumpir las nuevas funcionalidades que desarrollan mis compañeros. Además, al realizar la revisión cruzada de código y redactar las reglas de integración del equipo, comprobé que establecer convenciones claras desde el principio es fundamental para evitar conflictos y trabajar de forma profesional en un entorno colaborativo y sin problemas.
 
